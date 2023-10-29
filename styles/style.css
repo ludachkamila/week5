@@ -1,0 +1,120 @@
+.text{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nosifer', sans-serif;
+font-size: 40px;
+font-weight: 400;
+color: rgb(235, 222, 247);
+margin: 0;
+}
+.magic-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+}
+.vlacti-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+}
+.kover-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+}
+.lampa-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+    --uiMaskClipPath:var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #0c0c46;
+    --maskStrokeThickness: 5px;
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+.trizybez-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+    --uiMaskClipPath:var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #0c0c46;
+    --maskStrokeThickness: 5px;
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+.zeli-img{
+    padding: 5px;
+    width: 400px;
+    object-fit: cover;
+    --uiMaskClipPath:var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #083808;
+    --maskStrokeThickness: 5px;
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+.fon{
+    background-image: url(./../assets/images/textyr.jpg);
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.magic-img{
+    transition: 3s;
+}
+.magic-img:hover{
+    transform: scale(1.2);
+}
+.kover-img{
+    filter: grayscale(1);
+    transition: 1s;
+}
+.kover-img:hover{
+    filter: grayscale(0);
+}
+.zeli-img{
+    --maskClipPath: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    --maskAnimationDuration: .4s;
+}
+.zeli-img:hover,
+.zeli-img:focus{
+    --maskClipPath: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+.lampa-img{
+    --maskClipPath: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+}
+.lampa-img:hover,
+.lampa-img:focus{
+    --maskClipPath: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.trizybez-img{
+    --maskClipPath: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+}
+.trizybez-img:hover,
+.trizybez-img:focus{
+    --maskClipPath: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
+}
